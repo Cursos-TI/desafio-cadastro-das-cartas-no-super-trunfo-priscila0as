@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main(){
+
+    //especificação de dados da carta 1
     char estado1[50]= "P";
     char codigoDaCarta1[5] = "P01";
     char cidade1[20] = "Recife";
@@ -8,7 +10,9 @@ int main(){
     float area1 = 54.321;
     float PIB1 = 123.456;
     int pontosTuristicos1 = 50;
+    float divisao;
 
+    //inicio da entrada e saída de dados da carta 1
     printf("\nCarta 1:\n");
     printf("Digite o Estado: \n");
     scanf("%s", &estado1);
@@ -40,6 +44,17 @@ int main(){
     printf("PIB: %f\n", PIB1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
 
+    //operação de divisão, cálculo da densidade populacional
+    divisao = populacao1 / area1 ;
+    printf("Densidade populacional: %f\n", divisao);
+
+     //operação de divisão, PIB per Capita
+    divisao = PIB1 / populacao1 ;
+    printf("PIB per Carpita: %f\n", divisao);
+
+    //fim da entrada e saída de dados da carta 1
+
+    //especificação dos dados da carta 2
     char estado2[50]= "B";
     char codigoDaCarta2[5] = "B02";
     char cidade2[20] = "Brasília";
@@ -48,6 +63,7 @@ int main(){
     float PIB2 = 654.321;
     int pontosTuristicos2 = 31;
 
+//inicio da entrada e saída de dados da carta 2
     printf("\nCarta 2:\n");
     printf("Digite o Estado: \n");
     scanf("%s", &estado2);
@@ -78,6 +94,16 @@ int main(){
     printf("Área: %f m²\n", area2);
     printf("PIB: %f\n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+
+      //operação de divisão, cálculo da densidade populacional
+    divisao = populacao2 / area2 ;
+    printf("Densidade populacional: %f\n", divisao);
+
+        //operação de divisão, PIB per Capita
+    divisao = PIB2 / populacao2 ;
+    printf("PIB per Carpita: %f\n", divisao);
+
+    //fim da entrada e saída de dados da carta 2
 
 
 
